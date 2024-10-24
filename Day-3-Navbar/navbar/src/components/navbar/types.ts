@@ -79,3 +79,20 @@ export interface ResourceCategory {
   heading: string;
   children: ResourceChildren[];
 }
+
+interface AboutDataChild {
+  id: string;
+  title: string;
+  icon: IconType;
+  disabled: boolean;
+  link: string;
+}
+
+export interface AboutDataItem {
+  id: string;
+  heading: string;
+  gradientText?: string;
+  buttonText?: string;
+  children?: AboutDataChild[];
+  link?: string;
+}

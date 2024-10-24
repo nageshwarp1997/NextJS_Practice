@@ -10,15 +10,23 @@ import {
   ARDemosIcon,
   AutomotiveGradientIcon,
   AutomotiveIcon,
+  BriefCase,
   CaseStudiesIcon,
   ChatIcon,
+  ClipBoardCheck,
   ComparisonIcon,
   ConfiguratorsIcon,
   EditorGradientIcon,
   EventsIcon,
+  FileCheck02,
   FileIcon,
+  FileIcon02,
+  Focus3Line,
   FounderChatsIcon,
+  HandIcon,
+  HeartHand,
   MedicalIcon,
+  Phone,
   PlatformGradientIcon,
   PlayIcon,
   PodcastsIcon,
@@ -29,9 +37,12 @@ import {
   StoreFrontGradientIcon,
   ThreeDWalkthroughs,
   TourismIcon,
+  Trophy,
+  Users,
 } from "./icons";
 
 import {
+  AboutDataItem,
   NavLink,
   ProductDataItem,
   ResourceCategory,
@@ -362,4 +373,115 @@ export const categoryLabels: { name: string; url: string }[] = [
   { name: "Blogs", url: "/resources/immersifyd/blogs" },
   { name: "NEWSLETTER", url: "/resources/immersifyd/newsletter" },
   { name: "E-BOOKS", url: "/resources/immersifyd/ebooks" },
+];
+
+export const aboutData: AboutDataItem[] = [
+  {
+    id: uuidv4(),
+    heading: "COMPANY",
+    children: [
+      {
+        id: uuidv4(),
+        title: "About Us",
+        icon: HandIcon,
+        disabled: false,
+        link: "/about/company/about-us",
+      },
+      {
+        id: uuidv4(),
+        title: "Mission Vision Values",
+        icon: Focus3Line,
+        disabled: false,
+        link: "/about/company/mission-vision",
+      },
+      {
+        id: uuidv4(),
+        title: "Team",
+        icon: Users,
+        disabled: false,
+        link: "/about/company/team",
+      },
+      {
+        id: uuidv4(),
+        title: "Contact Us",
+        icon: Phone,
+        disabled: false,
+        link: "/about/company/contact-us",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    heading: "CAREERS",
+    children: [
+      {
+        id: uuidv4(),
+        title: "Values/Culture",
+        icon: HeartHand,
+        disabled: false,
+        link: "/about/careers/values-and-culture",
+      },
+      {
+        id: uuidv4(),
+        title: "Openings",
+        icon: BriefCase,
+        disabled: false,
+        link: "/about/careers/openings",
+      },
+    ],
+  },
+
+  {
+    id: uuidv4(),
+    heading: "PARTNER WITH US",
+    gradientText: "Together, we’re Unstoppable!",
+    buttonText: "Team Up",
+    link: "/about/partner-with-us",
+  },
+  {
+    id: uuidv4(),
+    heading: "PRESS",
+    children: [
+      {
+        id: uuidv4(),
+        title: "Newsroom",
+        icon: FileIcon02,
+        disabled: false,
+        link: "/",
+      },
+      {
+        id: uuidv4(),
+        title: "Openings",
+        disabled: true,
+        icon: Trophy,
+        link: "/",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    heading: "TRUST CENTER",
+    children: [
+      {
+        id: uuidv4(),
+        title: "Compliance",
+        icon: ClipBoardCheck,
+        disabled: false,
+        link: "/",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    heading: "LEGAL",
+    children: [
+      {
+        id: uuidv4(),
+        title: "Policies Document",
+        icon: FileCheck02,
+        disabled: false,
+        link: "/privacy-policy",
+      },
+    ],
+  },
 ];

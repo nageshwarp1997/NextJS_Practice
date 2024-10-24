@@ -52,7 +52,7 @@ const ImmersifydCard: React.FC = () => {
 const ResourceItem: React.FC<{ item: ResourceCategory }> = ({ item }) => {
   return (
     <div className="flex flex-col gap-6">
-      <p className="uppercase text-sm font-semibold tracking-[1px] py-4 border-b border-davys-gray text-white lg:py-0 lg:border-none lg:text-ctruh-light-secondary">
+      <p className="uppercase text-xs sm:text-sm text-nowrap font-semibold tracking-[1px] py-4 border-b border-davys-gray text-white lg:py-0 lg:border-none lg:text-ctruh-light-secondary">
         {item.heading}
       </p>
 
