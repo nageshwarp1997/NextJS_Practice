@@ -5,6 +5,11 @@ module.exports = {
     extend: {
       colors: {
         "ctruh-light-primary": "var(--ctruh-light-primary)",
+        "ctruh-dark-primary": "var(--ctruh-dark-primary)",
+        "ctruh-light-secondary": "var(--ctruh-light-secondary)",
+        "ctruh-dark-secondary": "var(--ctruh-dark-secondary)",
+        "davys-gray": "var(--davys-gray)",
+        "ctruh-background-dark": "var(--ctruh-background-dark)"
       },
       backgroundImage: {
         "ctruh-navbar-dark":
