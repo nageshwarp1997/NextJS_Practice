@@ -34,7 +34,7 @@ const TestimonialCarousel: React.FC<{ testimonials: Testimonial[] }> = ({
   };
 
   return (
-    <div className="bg-[--ctruh-neutral] p-6 rounded-lg hidden lg:flex flex-col">
+    <div className="bg-ctruh-neutral p-6 rounded-lg hidden lg:flex flex-col">
       <div className=" overflow-hidden">
         <div
           className=""
@@ -55,7 +55,7 @@ const TestimonialCarousel: React.FC<{ testimonials: Testimonial[] }> = ({
                     <StarIcon key={index} className="w-4 h-4" />
                   ))}
                 </div>
-                <p className="text-[--white-color] text-sm mt-2 font-normal italic leading-[21px]">
+                <p className="text-white text-sm mt-2 font-normal italic leading-[21px]">
                   &quot;{testimonial.content}&quot;
                 </p>
                 <div className="flex items-center gap-2">
@@ -70,10 +70,10 @@ const TestimonialCarousel: React.FC<{ testimonials: Testimonial[] }> = ({
                   />
                   <div className="flex items-center gap-2 justify-between w-full">
                     <div>
-                      <p className="text-[--white-color] text-xs font-semibold leading-[18px]">
+                      <p className="text-white text-xs font-semibold leading-[18px]">
                         {testimonial.name}
                       </p>
-                      <p className="text-[--ctruh-light-secondary] text-[10px] font-normal leading-4">
+                      <p className="text-ctruh-light-secondary text-[10px] font-normal leading-4">
                         {testimonial.role}, {testimonial.company}
                       </p>
                     </div>
@@ -95,7 +95,7 @@ const TestimonialCarousel: React.FC<{ testimonials: Testimonial[] }> = ({
         </div>
       </div>
       <Link href="/" className="flex items-center gap-2 mt-4 ">
-        <span className="text-[--ctruh-light-primary] text-xs">
+        <span className="text-ctruh-light-primary text-xs">
           More Customer Stories
         </span>
         <ArrowRightIcon fill="#bfbfbf" />

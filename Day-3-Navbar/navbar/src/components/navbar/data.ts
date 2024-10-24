@@ -10,12 +10,18 @@ import {
   ARDemosIcon,
   AutomotiveGradientIcon,
   AutomotiveIcon,
+  CaseStudiesIcon,
   ChatIcon,
+  ComparisonIcon,
   ConfiguratorsIcon,
   EditorGradientIcon,
+  EventsIcon,
+  FileIcon,
+  FounderChatsIcon,
   MedicalIcon,
   PlatformGradientIcon,
   PlayIcon,
+  PodcastsIcon,
   RealEstateGradientIcon,
   RealEstateIcon,
   RendersIcon,
@@ -28,6 +34,7 @@ import {
 import {
   NavLink,
   ProductDataItem,
+  ResourceCategory,
   SocialCommunityItem,
   SolutionsData,
   WhyCtruhDataItem,
@@ -73,6 +80,18 @@ export const whyCtruhData: WhyCtruhDataItem[] = [
     description: `Tailored experiences with customization and custom integrations`,
     image: "/images/navbar/Experiences.webp",
     link: "/why-ctruh/for-enterprises",
+  },
+];
+export const socialCommunity: SocialCommunityItem[] = [
+  {
+    id: 1,
+    icon: PlayIcon,
+    label: "Watch Demo",
+  },
+  {
+    id: 2,
+    icon: ChatIcon,
+    label: "Chat with our team",
   },
 ];
 
@@ -252,15 +271,95 @@ export const solutionsData: SolutionsData[] = [
   },
 ];
 
-export const socialCommunity: SocialCommunityItem[] = [
+export const resourceData: ResourceCategory[] = [
   {
-    id: 1,
-    icon: PlayIcon,
-    label: "Watch Demo",
+    id: uuidv4(),
+    heading: "MORE RESOURCES",
+    children: [
+      {
+        id: uuidv4(),
+        title: "Documentation",
+        description:
+          "Information hub for integrations, asset library, syncing, asset panels, and more",
+        icon: FileIcon,
+        disabled: false,
+      },
+      {
+        id: uuidv4(),
+        title: "Product Comparison",
+        description: "Ctruh vs Others: Which is best for your needs?",
+        icon: ComparisonIcon,
+        disabled: true,
+      },
+      {
+        id: uuidv4(),
+        title: "Case Studies",
+        description:
+          "Real-world impact of immersive experiences across industries",
+        icon: CaseStudiesIcon,
+        disabled: false,
+      },
+    ],
   },
   {
-    id: 2,
-    icon: ChatIcon,
-    label: "Chat with our team",
+    id: uuidv4(),
+    heading: "XR EXTRAVAGANZA",
+    children: [
+      {
+        id: uuidv4(),
+        title: "Podcasts",
+        description:
+          "Become an XR technology expert on-the-go with our Podcast",
+        icon: PodcastsIcon,
+        disabled: false,
+      },
+      {
+        id: uuidv4(),
+        title: "Events",
+        description: "AR/VR meet-ups, workshops, webinars, and more",
+        icon: EventsIcon,
+        disabled: false,
+      },
+      {
+        id: uuidv4(),
+        title: "Founder’s Personal Notes",
+        description: "Ctruh-verse:What we do, why we do it?",
+        icon: FounderChatsIcon,
+        disabled: true,
+      },
+    ],
   },
+  {
+    id: uuidv4(),
+    heading: "LATEST FROM CTRUH",
+    children: [
+      {
+        id: uuidv4(),
+        title: "What is Virtual Reality?",
+        description: "Create VR experiences on web",
+        type: "youtube",
+        image: "/images/navbar/142309a01ea664a12c62b88386e4253f_1.webp",
+      },
+      {
+        id: uuidv4(),
+        title: "The Future of 3D Design",
+        description: "Tools to optimize your 3D workflow",
+        image: "/images/navbar/532588594f9bc8417c60ea579ec7d2ec_1.webp",
+        type: "article",
+      },
+      {
+        id: uuidv4(),
+        title: "Elevate Your 3D Portfolio",
+        description: "Learn to create a cinematic portfolio",
+        type: "newsletter",
+        image: "/images/navbar/555a6b6b9d91a17acd57a05dc7269b0a.webp",
+      },
+    ],
+  },
+];
+
+export const categoryLabels: { name: string; url: string }[] = [
+  { name: "Blogs", url: "/resources/immersifyd/blogs" },
+  { name: "NEWSLETTER", url: "/resources/immersifyd/newsletter" },
+  { name: "E-BOOKS", url: "/resources/immersifyd/ebooks" },
 ];

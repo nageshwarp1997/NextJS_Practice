@@ -63,3 +63,19 @@ export interface SolutionsData {
   children?: SolutionsChildItem[];
   testimonials?: Testimonial[];
 }
+
+interface ResourceChildren {
+  id: string;
+  title: string;
+  description: string;
+  icon?: IconType;
+  disabled?: boolean;
+  type?: string;
+  image?: string;
+}
+
+export interface ResourceCategory {
+  id: string;
+  heading: string;
+  children: ResourceChildren[];
+}

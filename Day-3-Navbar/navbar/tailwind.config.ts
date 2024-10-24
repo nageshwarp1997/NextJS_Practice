@@ -9,7 +9,8 @@ module.exports = {
         "ctruh-light-secondary": "var(--ctruh-light-secondary)",
         "ctruh-dark-secondary": "var(--ctruh-dark-secondary)",
         "davys-gray": "var(--davys-gray)",
-        "ctruh-background-dark": "var(--ctruh-background-dark)"
+        "ctruh-background-dark": "var(--ctruh-background-dark)",
+        "ctruh-neutral": "var(--ctruh-neutral)",
       },
       backgroundImage: {
         "ctruh-navbar-dark":
