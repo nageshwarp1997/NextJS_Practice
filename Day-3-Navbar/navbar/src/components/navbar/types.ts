@@ -24,3 +24,18 @@ export interface WhyCtruhDataItem {
   image: string;
   link: string;
 }
+
+interface ProductDataChild {
+  id: string;
+  title: string;
+  description: string;
+  href: string;
+  icon: React.FC<{ className: string }>;
+}
+
+export interface ProductDataItem {
+  id: string;
+  heading: string;
+  children?: ProductDataChild[];
+  image?: string;
+}
