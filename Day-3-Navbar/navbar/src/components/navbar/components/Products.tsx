@@ -9,7 +9,7 @@ import { Button } from "../childComponents";
 const Products = () => {
   return (
     <div className="lg:p-px lg:bg-gradient-to-b lg:from-[#333333] lg:to-[#0D0D0D] lg:rounded-[20px]">
-      <div className="bg-ctruh-dark-primary text-white px-8 pb-10 lg:max-w-[1290px] lg:w-full lg:px-12 lg:py-8 lg:bg-ctruh-dark-secondary lg:rounded-[20px] lg:font-metropolis">
+      <div className="bg-ctruh-dark-primary text-white px-8 pb-10 lg:max-w-[1150px] lg:w-full lg:px-12 lg:py-8 lg:bg-ctruh-dark-secondary lg:rounded-[20px] lg:font-metropolis">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           {productData.map((item, index) => (
             <div key={item.id}>
@@ -75,12 +75,12 @@ const Products = () => {
                     loading="lazy"
                     className="object-cover w-full max-h-[150px] h-full rounded-xl lg:max-h-[276px] object-top-quarter"
                   />
-                  <div className="absolute left-0 bottom-0 p-4 flex flex-col items-start justify-between w-full lg:px-7 lg:py-6 lg:text-base">
+                  <div className="absolute left-0 bottom-0 p-4 flex flex-col items-start justify-between w-full lg:px-7 py-1 lg:py-6 lg:text-base">
                     <div>
                       <span className="text-ctruh-background-dark bg-white text-[10px] px-2 py-1 rounded-md font-bold lg:text-base">
                         MaaS
                       </span>
-                      <p className="mt-2 text-[16px] leading-4 font-semibold text-white lg:mt-3 lg:mb-4 lg:text-[27px] lg:leading-7">
+                      <p className="mt-2 text-[16px] leading-4 font-semibold text-white lg:mt-3 mb-2 lg:mb-4 lg:text-[27px] lg:leading-7">
                         Metaverse <br className="hidden lg:block" />
                         as a Service
                       </p>

@@ -39,3 +39,27 @@ export interface ProductDataItem {
   children?: ProductDataChild[];
   image?: string;
 }
+
+interface SolutionsChildItem {
+  id: string;
+  icon: IconType;
+  title: string;
+  description?: string;
+  href: string;
+}
+
+export interface Testimonial {
+  id: string;
+  content: string;
+  name: string;
+  role: string;
+  image: string;
+  company: string;
+}
+
+export interface SolutionsData {
+  id: string;
+  heading: string;
+  children?: SolutionsChildItem[];
+  testimonials?: Testimonial[];
+}

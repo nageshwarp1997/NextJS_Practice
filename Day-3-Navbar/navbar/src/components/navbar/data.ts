@@ -6,19 +6,30 @@ import Resources from "./components/Resources";
 import About from "./components/About";
 import {
   AIStarGradientIcon,
+  AnimationsIcon,
+  ARDemosIcon,
   AutomotiveGradientIcon,
+  AutomotiveIcon,
   ChatIcon,
+  ConfiguratorsIcon,
   EditorGradientIcon,
+  MedicalIcon,
   PlatformGradientIcon,
   PlayIcon,
   RealEstateGradientIcon,
+  RealEstateIcon,
+  RendersIcon,
+  RetailIcon,
   StoreFrontGradientIcon,
+  ThreeDWalkthroughs,
+  TourismIcon,
 } from "./icons";
 
 import {
   NavLink,
   ProductDataItem,
   SocialCommunityItem,
+  SolutionsData,
   WhyCtruhDataItem,
 } from "./types";
 
@@ -124,6 +135,120 @@ export const productData: ProductDataItem[] = [
     id: uuidv4(),
     heading: "METAVERSE AS A SERVICE",
     image: "/images/navbar/MaasCard.webp",
+  },
+];
+
+export const solutionsData: SolutionsData[] = [
+  {
+    id: uuidv4(),
+    heading: "INDUSTRIES",
+    children: [
+      {
+        id: uuidv4(),
+        icon: RetailIcon,
+        title: "Retail/E-Commerce",
+        href: "/solutions/industries/retail",
+      },
+      {
+        id: uuidv4(),
+        icon: AutomotiveIcon,
+        title: "Automotive",
+        href: "/solutions/industries/automotive",
+      },
+      {
+        id: uuidv4(),
+        icon: RealEstateIcon,
+        title: "Real Estate",
+        href: "/solutions/industries/real-estate",
+      },
+      {
+        id: uuidv4(),
+        icon: TourismIcon,
+        title: "Tourism",
+        href: "/solutions/industries/tourism",
+      },
+      {
+        id: uuidv4(),
+        icon: MedicalIcon,
+        title: "Healthcare",
+        href: "/solutions/industries/medical",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    heading: "USECASES",
+    children: [
+      {
+        id: uuidv4(),
+        icon: ThreeDWalkthroughs,
+        title: "3D Walkthroughs",
+        description: "Boost customer engagement",
+        href: "/solutions/usecases/3d-walkthrough",
+      },
+      {
+        id: uuidv4(),
+        icon: ARDemosIcon,
+        title: "AR Demos",
+        description: "Enhance purchase confidence",
+        href: "/solutions/usecases/ar-demos",
+      },
+      {
+        id: uuidv4(),
+        icon: AnimationsIcon,
+        title: "Animations",
+        description: "Increase sales understanding",
+        href: "/solutions/usecases/animations",
+      },
+      {
+        id: uuidv4(),
+        icon: ConfiguratorsIcon,
+        title: "Configurators",
+        description: "Drive customer satisfaction",
+        href: "/solutions/usecases/configurators",
+      },
+      {
+        id: uuidv4(),
+        icon: RendersIcon,
+        title: "Renders",
+        description: "Improve conversion rate",
+        href: "/solutions/usecases/renders",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    heading: "PEOPLE LOVE CTRUH",
+    testimonials: [
+      {
+        id: uuidv4(),
+
+        content:
+          "Ctruh’s out of the world XR solutions brought our ideas to life like never before. Simply the best in business!",
+        name: "Emily Rodriguez",
+        role: "Founder",
+        image: "/images/navbar/emily-rodriguez.png",
+        company: "Company Name",
+      },
+      {
+        id: uuidv4(),
+
+        content: `With Ctruh, our brand now offers customers a virtual experience that sets us apart from the competition.`,
+        name: "Samantha Taylor",
+        role: "Founder",
+        image: "/images/navbar/samantha-taylor.jpeg",
+        company: "Company Name",
+      },
+      {
+        id: uuidv4(),
+
+        content: `Ctruh’s platform brought our ideas to life in ways we never imagined. The possibilities are endless!`,
+        name: "Rajesh Kumar",
+        role: "Founder",
+        image: "/images/navbar/rajesh-kumar.jpeg",
+        company: "Company Name",
+      },
+    ],
   },
 ];
 
