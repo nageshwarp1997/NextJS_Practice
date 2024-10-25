@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 type IconType = React.FC<React.SVGProps<SVGSVGElement>>;
 
 export interface NavLink {
@@ -95,4 +97,19 @@ export interface AboutDataItem {
   buttonText?: string;
   children?: AboutDataChild[];
   link?: string;
+}
+
+export interface ButtonTypes {
+  content: string;
+  type?: "primary" | "solid" | "outline";
+  style?: React.CSSProperties;
+  onClick?: (e: React.MouseEvent) => void;
+  id?: string;
+  wrapperClassName?: string;
+  className?: string;
+  leftIcon?: ReactElement;
+  rightIcon?: ReactElement;
+  loadingContent?: ReactElement;
+  submit?: boolean;
+  disabled?: boolean;
 }

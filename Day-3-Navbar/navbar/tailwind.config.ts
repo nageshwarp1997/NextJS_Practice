@@ -11,6 +11,10 @@ module.exports = {
         "davys-gray": "var(--davys-gray)",
         "ctruh-background-dark": "var(--ctruh-background-dark)",
         "ctruh-neutral": "var(--ctruh-neutral)",
+        silver: "var(--silver)",
+        "translucent-white": "var(--translucent-white)",
+        "background-color": "var(--background-color)",
+        "ctruh-stroke-card": "var(--ctruh-stroke-card)",
       },
       backgroundImage: {
         "ctruh-navbar-dark":

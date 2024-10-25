@@ -1,19 +1,4 @@
-import { ReactElement } from "react";
-
-interface ButtonTypes {
-  content: string;
-  type?: "primary" | "solid" | "outline";
-  style?: React.CSSProperties;
-  onClick?: (e: React.MouseEvent) => void;
-  id?: string;
-  wrapperClassName?: string;
-  className?: string;
-  leftIcon?: ReactElement;
-  rightIcon?: ReactElement;
-  loadingContent?: ReactElement;
-  submit?: boolean;
-  disabled?: boolean;
-}
+import { ButtonTypes } from "../navbar/types";
 
 export const Button = ({
   content,
@@ -75,4 +60,3 @@ export const Button = ({
     </div>
   );
 };
-

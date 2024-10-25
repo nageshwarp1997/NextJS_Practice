@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { aboutData } from "../data";
-import { Button } from "../childComponents";
+import { Button } from "../../common/Button";
 
 const About = () => {
   const firstGroup = aboutData.slice(0, 3);

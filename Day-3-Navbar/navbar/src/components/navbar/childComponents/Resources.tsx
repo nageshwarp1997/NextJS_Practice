@@ -4,10 +4,9 @@ import React from "react";
 import { categoryLabels, resourceData } from "../data";
 import { ResourceCategory } from "../types";
 import { ArrowForwardIcon, ArrowRightIcon, YoutubeIcon } from "../icons";
-import { Button } from "../childComponents";
+import { Button } from "../../common/Button";
 
 const ImmersifydCard: React.FC = () => {
-
   return (
     <div className="flex flex-col gap-4 justify-center items-center p-6 bg-ctruh-neutral rounded-[20px]">
       <div className="flex justify-center items-center relative">

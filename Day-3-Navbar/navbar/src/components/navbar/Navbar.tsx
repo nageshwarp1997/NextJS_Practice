@@ -10,7 +10,7 @@ import {
   HamburgerIcon,
   ThickChevronDownIcon,
 } from "./icons";
-import { Button } from "./childComponents";
+import { Button } from "../common/Button";
 import { HoveredContentProps } from "./types";
 
 const Navbar: React.FC = () => {

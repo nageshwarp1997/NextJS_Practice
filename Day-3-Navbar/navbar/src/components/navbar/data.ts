@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
-import WhyCtruh from "./components/WhyCtruh";
-import Products from "./components/Products";
-import Solutions from "./components/Solutions";
-import Resources from "./components/Resources";
-import About from "./components/About";
+import WhyCtruh from "./childComponents/WhyCtruh";
+import Products from "./childComponents/Products";
+import Solutions from "./childComponents/Solutions";
+import Resources from "./childComponents/Resources";
+import About from "./childComponents/About";
 import {
   AIStarGradientIcon,
   AnimationsIcon,

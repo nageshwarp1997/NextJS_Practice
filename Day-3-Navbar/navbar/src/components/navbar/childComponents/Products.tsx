@@ -4,7 +4,7 @@ import { ThickChevronDownIcon } from "../icons";
 import { splitTitle } from "@/utils/utils";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "../childComponents";
+import { Button } from "../../common/Button";
 
 const Products = () => {
   return (

@@ -3,7 +3,7 @@ import { socialCommunity, whyCtruhData } from "../data";
 import Link from "next/link";
 import { ThickChevronDownIcon } from "../icons";
 import Image from "next/image";
-import { Button } from "../childComponents";
+import { Button } from "../../common/Button";
 
 const WhyCtruh = () => {
   return (
