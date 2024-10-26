@@ -60,3 +60,5 @@ export const cardTwoData = [
     default: true,
   },
 ];
+
+export const cardThreeData = ["No-code", "Low-code", "Web-based"];

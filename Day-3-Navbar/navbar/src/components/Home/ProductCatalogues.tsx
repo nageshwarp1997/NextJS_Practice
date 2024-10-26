@@ -45,7 +45,7 @@ const ProductCatalogues = () => {
           </>
         }
         {<CardTwo />}
-        {/* {<CardThree />} */}
+        {<CardThree />}
       </div>
     </section>
   );
